@@ -13,7 +13,7 @@ return (
 <Stack.Navigator>
 <Stack.Screen name="UserList" component={UserList}/>
 <Stack.Screen name="CreateUserScreen" component={CreateUserScreen}/>
-<Stack.Screen name="UserDetalScreen" component={UserDetailScreen}/>
+<Stack.Screen name="UserDetailScreen" component={UserDetailScreen}/>
 
 
 

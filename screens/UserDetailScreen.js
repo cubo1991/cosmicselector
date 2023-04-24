@@ -3,7 +3,8 @@ import { Text, View } from 'react-native'
 
 
 
-const UserDetailScreen = () => {
+const UserDetailScreen = (props) => {
+    console.log(props.route.params)
   return (
     <View>
         <Text>
