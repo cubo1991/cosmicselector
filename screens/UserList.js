@@ -30,13 +30,15 @@ const UserList = (props) => {
    
     return (
         <ScrollView>
-            <Button title="Create User" onPress={() => props.navigation.navigate('CreateUserScreen')} />
+            <Button title="Create User" onPress={() => props.navigation.navigate('CreateUserScreen',)} />
             {
                 users.map(user => {
                      
                     return ( 
                         <ListItem key={user.id} bottomDivider onPress={() => {
-                            props.navigation.navigate('UserDetailScreen')
+                            props.navigation.navigate('UserDetailScreen', {
+                                userId: user.id
+                            })
                         }}>
                             <ListItem.Chevron/>
                             <ListItem.Content>
